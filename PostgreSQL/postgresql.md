@@ -11,8 +11,6 @@
 
 ### Task requirement
 
-### Install Podman
-
 ### PostgreSQL
 
 ### Execute the SQL command to create a table using CRUD operation
