@@ -1,34 +1,34 @@
 ![Alt Text](1.png)
 
-# <p align="center">Documentation on Postgresql</p> 
+**<p align="center">Documentation on Postgresql</p>** 
 
-## Submitted By :- 
-### Yogesh
+**Submitted By :-** 
+**Yogesh**
 
 
 
-# <p align="center">Table of Content</p>
+**<p align="center">Table of Content</p>**
 
-### Task requirement
+[Task requirement](#task-requirement)
 
-### PostgreSQL
+[PostgreSQL](#postgresql)
 
-### Execute the SQL command to create a table using CRUD operation
+[Execute the SQL command to create a table using CRUD operation](#execute-the-sql-command-to-create-a-table-using-crud-operation)
 
-### Setup the repository for pgadmin
+[Setup the repository for pgadmin](#install-the-public-key-for-the-repository-if-not-done-previously)
 
-### Install pgAdmin
+[Install pgAdmin](#install-pgadmin)
 
-### Reference Link
+[Reference Link](#reference-link)
 
-# <p align="center">PostgreSQL </p>
+**<p align="center">PostgreSQL </p>**
 
-## Task requirement :-
+# Task requirement
 
 To setup Postgresql and create a table using CRUD operation. 
 
 
-## Environment details
+**Environment details**
 
 
 Description    :	Ubuntu 22.04.3 LTS
@@ -37,11 +37,11 @@ Codename     :	jammy
 
 
 
-## List of tools and technologies
+**List of tools and technologies**
 
 Postgres and pgAdmin
 
-# PostgreSQL : 
+# PostgreSQL 
 
 PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
 
@@ -53,7 +53,7 @@ Here, given below the commands to create repository and install postgresql
 
 
 
-### Create the file repository configuration:
+**Create the file repository configuration:**
 
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
@@ -67,7 +67,7 @@ lsb_release - It stands for "Linux Standard Base release.It is used to provide c
 
 
 
-### Import the repository signing key:
+**Import the repository signing key:**
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -e
 
@@ -77,7 +77,7 @@ wget - It is a command-line utility used in linux to retrieve files from the web
 
 -O - It is stands for "output" or "output file" and is used to specify the output destination or file in commands
 
-### Update the package lists:
+**Update the package lists:**
 
 sudo apt-get update
 
@@ -88,9 +88,8 @@ apt - It is used to install any package. It is only used in Ubuntu.
 Update - To update any package.
 
 
-## Install the latest version of PostgreSQL.
+**Install the latest version of PostgreSQL.**
 
-### If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
 
 sudo apt-get -y install postgresql
 
@@ -98,7 +97,7 @@ Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser 
 
 apt - It is used to install any package. It is only used in Ubuntu.
 
-### start command for postgreSQL
+**start command for postgreSQL**
 
 sudo -i -u postgres
 
@@ -109,7 +108,7 @@ Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser 
 -u - use it for updates.
 
 
-### Create database 
+**Create database** 
 
 createdb my_project
 
@@ -118,7 +117,7 @@ createdb - It is used to create databases.
 my_project - It is  a file name.
 
  
-### open database in postgreSQL
+**open database in postgreSQL**
 
 psql -d my_project
 
@@ -127,7 +126,7 @@ psql - It is used to interact with postgresql.
 -d my_project - The -d flag specifies the database name (my_project in this case) to which you want to connect. It indicates that you want to interact with the PostgreSQL database named my_project.
 
 
-# Execute the SQL command to create a table using CRUD operation :
+# Execute the SQL command to create a table using CRUD operation
 
 CRUD stands for Create, Read, Update, and Delete, which represents the four basic functions that can be performed on most database systems and forms the foundation of persistent storage and data manipulation.
 
@@ -146,7 +145,7 @@ Type of Data: It defines the kind of data that can be stored, such as integers, 
 Primary key - A primary key in a database is a special field or combination of fields that uniquely identifies each record (or row) in a table. It serves as a unique identifier for each row, ensuring that there are no duplicate or null values within that key column or set of columns.
 
 
-### To create a new table : 
+**To create a new table :** 
 
 
 CREATE TABLE ritu (
@@ -158,12 +157,12 @@ CREATE TABLE ritu (
 );
 
 
-### Add data into given table that is created above : 
+**Add data into given table that is created above :** 
 
 INSERT INTO ritu (id, name) VALUES (1, 'Yogesh');
 
  
-### Add more data into the given table : 
+**Add more data into the given table :** 
 
 INSERT INTO ritu (id, name) VALUES               
 
@@ -174,12 +173,12 @@ INSERT INTO ritu (id, name) VALUES
 (4, 'Rohit');
 
 
-### Read created table data : 
+**Read created table data :** 
 
 SELECT * FROM ritu;
 
 
-* #### Output : 
+* **Output :** 
 
 my_project=# SELECT * FROM ritu;
 
@@ -197,7 +196,7 @@ my_project=# SELECT * FROM ritu;
 
 (4 rows)
 
-### Update given table : 
+**Update given table :** 
 
 UPDATE ritu
 
@@ -206,7 +205,7 @@ SET name = 'Pushpender dangi'
 WHERE id = '2';
 
 
-* #### Output : 
+* **Output :** 
  
 my_project=# SELECT * FROM ritu;
 
@@ -226,7 +225,7 @@ my_project=# SELECT * FROM ritu;
 (4 rows)
 
 
-### Delete data in given table : 
+**Delete data in given table :** 
 
 DELETE FROM ritu   
 
@@ -266,7 +265,7 @@ curl - Client URL(Uniform Resource Locator).It is used to sending or retrieve da
 
 gpg - ‘GNU Privacy Guard’, It is used for encryption,decryption and signing operations, primarily focusing on security data. 
 
-## Create the repository configuration file:
+**Create the repository configuration file:**
 
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 
@@ -282,51 +281,51 @@ echo - The command in linux is used to print or display text and or variables on
 PGAdmin is a web-based Graphical User Interface (GUI) management application used to communicate with Postgres and derivative relational databases on both local and remote servers.
 
 
-## Firstly install pgadmin for desktop from pgadmin.org
+**Firstly install pgadmin for desktop from pgadmin.org**
 
-### Install for both desktop and web modes:
+**Install for both desktop and web modes:**
 
 sudo apt install pgadmin4
 
 
-### Install for desktop mode only:
+**Install for desktop mode only:**
 
 sudo apt install pgadmin4-desktop
 
 
-### Install for web mode only: 
+**Install for web mode only:** 
 
 sudo apt install pgadmin4-web 
 
 
-### Configure the web server, if you installed pgadmin4-web:
+**Configure the web server, if you installed pgadmin4-web:**
 
 sudo /usr/pgadmin4/bin/setup-web.sh
 
 
-### Link to open pgadmin
+**Link to open pgadmin**
 
 
 http://127.0.0.1/pgadmin4
 
-## For web preview show below image : 
+**For web preview show below image :** 
 
 ![Alt Text](2.png)
 
 ![Alt Text](3.png)
 
-## For Desktop preview and connect to local server :
+**For Desktop preview and connect to local server :**
 
 ![Alt Text](4.png)
 
 ![Alt Text](5.png)
 
 
-## Connect to local host : 
+**Connect to local host :** 
 
 ![Alt Text](6.png)
 
-# Reference Link :- 
+# Reference Link 
 
 https://youtu.be/tducLYZzElo?si=wnZYgGCEr486aFYR
 
