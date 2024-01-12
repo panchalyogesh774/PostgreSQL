@@ -250,14 +250,14 @@ These are the results of CRUD operation.
 
 Setup the repository for pgadmin
 
+## Install the public key for the repository (if not done previously):
+
 What is a public key? Why do we need to install public keys in repositories?
 
 In the context of software repositories or package managers (like APT in Debian-based systems), the installation of a public key is part of ensuring the authenticity and integrity of the software packages.
 
 We need to install public keys in repositories to secure communication, trust and verification ,security and Integrity, etc.
 
-
-## Install the public key for the repository (if not done previously):
 
 curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
 
