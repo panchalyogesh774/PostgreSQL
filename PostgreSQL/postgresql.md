@@ -55,7 +55,7 @@ Here, given below the commands to create repository and install postgresql
 
 **Create the file repository configuration:**
 
-sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+- sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
 Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
 
@@ -69,7 +69,7 @@ lsb_release - It stands for "Linux Standard Base release.It is used to provide c
 
 **Import the repository signing key:**
 
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -e
+- wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -e
 
 wget - It is a command-line utility used in linux to retrieve files from the web.
 
@@ -79,7 +79,7 @@ wget - It is a command-line utility used in linux to retrieve files from the web
 
 **Update the package lists:**
 
-sudo apt-get update
+- sudo apt-get update
 
 Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
 
@@ -91,7 +91,7 @@ Update - To update any package.
 **Install the latest version of PostgreSQL.**
 
 
-sudo apt-get -y install postgresql
+- sudo apt-get -y install postgresql
 
 Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
 
@@ -99,7 +99,7 @@ apt - It is used to install any package. It is only used in Ubuntu.
 
 **start command for postgreSQL**
 
-sudo -i -u postgres
+- sudo -i -u postgres
 
 Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
 
@@ -110,7 +110,7 @@ Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser 
 
 **Create database** 
 
-createdb my_project
+- createdb my_project
 
 createdb - It is used to create databases.
 
@@ -119,7 +119,7 @@ my_project - It is  a file name.
  
 **open database in postgreSQL**
 
-psql -d my_project
+- psql -d my_project
 
 psql - It is used to interact with postgresql.
 
@@ -148,7 +148,7 @@ Primary key - A primary key in a database is a special field or combination of f
 **To create a new table :** 
 
 
-CREATE TABLE ritu (
+- CREATE TABLE ritu (
 
     id INT PRIMARY KEY,
 
@@ -159,12 +159,12 @@ CREATE TABLE ritu (
 
 **Add data into given table that is created above :** 
 
-INSERT INTO ritu (id, name) VALUES (1, 'Yogesh');
+- INSERT INTO ritu (id, name) VALUES (1, 'Yogesh');
 
  
 **Add more data into the given table :** 
 
-INSERT INTO ritu (id, name) VALUES               
+- INSERT INTO ritu (id, name) VALUES               
 
 (2, 'Pushpender'),
 
@@ -175,7 +175,7 @@ INSERT INTO ritu (id, name) VALUES
 
 **Read created table data :** 
 
-SELECT * FROM ritu;
+- SELECT * FROM ritu;
 
 
 * **Output :** 
@@ -227,7 +227,7 @@ my_project=# SELECT * FROM ritu;
 
 **Delete data in given table :** 
 
-DELETE FROM ritu   
+- DELETE FROM ritu   
 
 WHERE id = '3';
 
@@ -259,7 +259,7 @@ In the context of software repositories or package managers (like APT in Debian-
 We need to install public keys in repositories to secure communication, trust and verification ,security and Integrity, etc.
 
 
-curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
+- curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
 
 curl - Client URL(Uniform Resource Locator).It is used to sending or retrieve data from the web page. 
 
@@ -267,7 +267,7 @@ gpg - ‘GNU Privacy Guard’, It is used for encryption,decryption and signing 
 
 **Create the repository configuration file:**
 
-sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+- sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 
 Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
 
@@ -285,22 +285,22 @@ PGAdmin is a web-based Graphical User Interface (GUI) management application use
 
 **Install for both desktop and web modes:**
 
-sudo apt install pgadmin4
+- sudo apt install pgadmin4
 
 
 **Install for desktop mode only:**
 
-sudo apt install pgadmin4-desktop
+- sudo apt install pgadmin4-desktop
 
 
 **Install for web mode only:** 
 
-sudo apt install pgadmin4-web 
+- sudo apt install pgadmin4-web 
 
 
 **Configure the web server, if you installed pgadmin4-web:**
 
-sudo /usr/pgadmin4/bin/setup-web.sh
+- sudo /usr/pgadmin4/bin/setup-web.sh
 
 
 **Link to open pgadmin**
@@ -311,7 +311,7 @@ http://127.0.0.1/pgadmin4
 **For web preview show below image :** 
 
 ![Alt Text](2.png)
-
+ 
 ![Alt Text](3.png)
 
 **For Desktop preview and connect to local server :**
