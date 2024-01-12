@@ -1,13 +1,13 @@
 ![Alt Text](1.png)
 
-**<p align="center">Documentation on Postgresql</p>** 
+# **<p align="center">Documentation on Postgresql</p>** 
 
 **Submitted By :-** 
 **Yogesh**
 
 
 
-**<p align="center">Table of Content</p>**
+# **<p align="center">Table of Content</p>**
 
 [Task requirement](#task-requirement)
 
@@ -21,7 +21,7 @@
 
 [Reference Link](#reference-link)
 
-**<p align="center">PostgreSQL </p>**
+# **<p align="center">PostgreSQL </p>**
 
 # Task requirement
 
