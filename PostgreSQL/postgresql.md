@@ -128,21 +128,21 @@ psql - It is used to interact with postgresql.
 
 # Execute the SQL command to create a table using CRUD operation
 
-CRUD stands for Create, Read, Update, and Delete, which represents the four basic functions that can be performed on most database systems and forms the foundation of persistent storage and data manipulation.
+**CRUD** stands for Create, Read, Update, and Delete, which represents the four basic functions that can be performed on most database systems and forms the foundation of persistent storage and data manipulation.
 
-Create: Involves adding new data records to a database. It's about inserting new entries into the database, creating new entities, or adding new rows to a table.
+**Create:** Involves adding new data records to a database. It's about inserting new entries into the database, creating new entities, or adding new rows to a table.
 
-Read: Involves retrieving or reading existing data from a database. This operation fetches and displays data, allowing you to view or access the stored information.
+**Read:** Involves retrieving or reading existing data from a database. This operation fetches and displays data, allowing you to view or access the stored information.
 
-Update: Involves modifying existing data in a database. This operation allows you to change or update the information already stored. It could be updating specific fields in a record or altering the entire record.
+**Update:** Involves modifying existing data in a database. This operation allows you to change or update the information already stored. It could be updating specific fields in a record or altering the entire record.
 
-Delete: Involves removing data from a database. This operation allows the deletion of existing records or entries, effectively removing them from the database.
+**Delete:** Involves removing data from a database. This operation allows the deletion of existing records or entries, effectively removing them from the database.
 
-Data type - A data type is a classification that specifies the type of data that a variable, column, or object can hold in programming languages or databases. 
+**Data type -** A data type is a classification that specifies the type of data that a variable, column, or object can hold in programming languages or databases. 
 
-Type of Data: It defines the kind of data that can be stored, such as integers, numbers, characters, boolean values, etc.
+**Type of Data:** It defines the kind of data that can be stored, such as integers, numbers, characters, boolean values, etc.
 
-Primary key - A primary key in a database is a special field or combination of fields that uniquely identifies each record (or row) in a table. It serves as a unique identifier for each row, ensuring that there are no duplicate or null values within that key column or set of columns.
+**Primary key -** A primary key in a database is a special field or combination of fields that uniquely identifies each record (or row) in a table. It serves as a unique identifier for each row, ensuring that there are no duplicate or null values within that key column or set of columns.
 
 
 **To create a new table :** 
