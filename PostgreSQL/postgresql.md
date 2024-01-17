@@ -35,7 +35,13 @@ Description    :	Ubuntu 22.04.3 LTS
 
 Codename     :	jammy
 
+**The minimum hardware required to install and run PostgreSQL**
 
+Processor - 1 GHz
+
+RAM - 2GB
+
+HDD - 512MB
 
 **List of tools and technologies**
 
