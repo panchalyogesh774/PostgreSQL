@@ -287,15 +287,26 @@ PGAdmin is a web-based Graphical User Interface (GUI) management application use
 
 - sudo apt install pgadmin4
 
+  Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
+  
+  apt - It is used to install any package. It is only used in Ubuntu.
+
 
 **Install for desktop mode only:**
 
 - sudo apt install pgadmin4-desktop
 
+  Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
+  
+  apt - It is used to install any package. It is only used in Ubuntu.
 
 **Install for web mode only:** 
 
-- sudo apt install pgadmin4-web 
+- sudo apt install pgadmin4-web
+
+  Sudo - It stands for ‘Superuser do’. It converts a normal user to superuser for a short time.
+  
+  apt - It is used to install any package. It is only used in Ubuntu.
 
 
 **Configure the web server, if you installed pgadmin4-web:**
