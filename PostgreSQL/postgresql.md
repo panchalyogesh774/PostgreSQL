@@ -254,7 +254,7 @@ Setup the repository for pgadmin
 
 What is a public key? Why do we need to install public keys in repositories?
 
-In the context of software repositories or package managers (like APT in Debian-based systems), the installation of a public key is part of ensuring the authenticity and integrity of the software packages.
+The public key is shared openly and can be freely distributed, while the corresponding private key is kept secret. The public key is used to encrypt data or verify digital signatures, and the private key is used to decrypt the data or create digital signatures.
 
 We need to install public keys in repositories to secure communication, trust and verification ,security and Integrity, etc.
 
