@@ -254,7 +254,7 @@ my_project=# SELECT * FROM ritu;
 
 These are the results of CRUD operation.
 
-Setup the repository for pgadmin
+# **Setup the repository for pgadmin**
 
 ## Install the public key for the repository (if not done previously):
 
